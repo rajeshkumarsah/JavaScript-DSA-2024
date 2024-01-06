@@ -58,6 +58,6 @@ If you wish to contribute to this repository and make it even more comprehensive
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/add-new-algorithm`).
 3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new algorithm'`).
+4. Commit your changes (`git commit -m 'Add new algorithm'`).
 5. Push to the branch (`git push origin feature/add-new-algorithm`).
 6. Create a new Pull Request.
