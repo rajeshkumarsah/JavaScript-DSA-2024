@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{a as r,b as i,c as p,j as n,l as m,m as f,n as s,q as a,u as c,x as d}from"./chunk-K624MH4J.mjs";var u=(()=>{let o=class o{constructor(){this.title="DSA-JavaScript"}};o.\u0275fac=function(e){return new(e||o)},o.\u0275cmp=r({type:o,selectors:[["app-root"]],standalone:!0,features:[p],decls:1,vars:0,template:function(e,A){e&1&&i(0,"router-outlet")},dependencies:[m,c]});let t=o;return t})();var l=[];var v={providers:[d(l),s()]};var x={providers:[a()]},g=n(v,x);var y=()=>f(u,g),B=y;export{B as a};
