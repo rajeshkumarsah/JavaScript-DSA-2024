@@ -1,0 +1,69 @@
+// _mixins.scss
+
+// Center mixin
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Border-radius mixin
+  @mixin border-radius($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    border-radius: $border-radius;
+  }
+  
+  // Flexbox mixin for column direction
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // Flexbox mixin for row direction
+  @mixin flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  // Placeholder mixin for common box-shadow
+  @mixin box-shadow($x, $y, $blur, $spread, $color) {
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+  }
+  
+  // Clearfix mixin
+  @mixin clearfix {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  // Transition mixin
+  @mixin transition($property, $duration: 0.3s, $timing-function: ease) {
+    -webkit-transition: $property $duration $timing-function;
+    -moz-transition: $property $duration $timing-function;
+    -o-transition: $property $duration $timing-function;
+    transition: $property $duration $timing-function;
+  }
+  
+  // Placeholder mixin for text-truncate
+  @mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  // Placeholder mixin for text-hide (hide text while keeping it accessible to screen readers)
+  @mixin text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  

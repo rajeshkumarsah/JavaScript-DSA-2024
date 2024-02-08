@@ -1,0 +1,53 @@
+// typography.scss
+
+// Define font variables
+$base-font-family: Arial, sans-serif;
+$base-font-size: 16px;
+$heading-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Apply base typography styles
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 1.5;
+}
+
+// Define heading styles
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+// Define link styles
+a {
+  color: blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

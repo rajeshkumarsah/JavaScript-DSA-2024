@@ -1,0 +1,63 @@
+// _base.scss
+
+// Reset styles
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+// Forms
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  margin-bottom: 10px;
+
+  &:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}

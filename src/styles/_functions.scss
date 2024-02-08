@@ -1,0 +1,20 @@
+// function.scss
+
+// Define functions here
+@function calculateWidth($width, $total) {
+    @return ($width / $total) * 100%;
+  }
+  
+  @function lighten($color, $amount) {
+    @return mix(white, $color, $amount);
+  }
+  
+  @function darken($color, $amount) {
+    @return mix(black, $color, $amount);
+  }
+  
+  // Usage example:
+  $primary-color: #3498db;
+  $lightened-primary-color: lighten($primary-color, 20%);
+  $darkened-primary-color: darken($primary-color, 20%);
+  

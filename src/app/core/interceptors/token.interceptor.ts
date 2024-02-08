@@ -6,7 +6,7 @@ export const tokenInterceptor: HttpInterceptorFn = (req, next) => {
     'Constent-Type' : "application/json",
     // 'Bearer' : localStorage.getItem('token');
   });
-  let clone = req.clone ({
+  const clone = req.clone ({
     headers : newHeaders
   })
   //end 
